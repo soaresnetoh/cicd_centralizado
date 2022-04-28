@@ -6,13 +6,15 @@ jobs:
   jobs_teste:
     name: workflow
     runs-on: ubuntu
+    uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
+    secrets:
+      token: ${{ secrets.TOKEN }}          
 
-    steps:
-      - name: Checkout
-        uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
-
-        secrets: 
-          token: ${{ secrets.TOKEN }}
+#    steps:
+#      - name: Checkout
+#        uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
+#        secrets: 
+#          token: ${{ secrets.TOKEN }}
 
 
 #  my_first_job:

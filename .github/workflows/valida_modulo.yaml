@@ -9,7 +9,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: rafaelm93/cicd_centralizado/.github/workflow/ansible_valida_role.yaml@teste
+        uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
 
         secrets: 
           token: ${{ secrets.TOKEN }}
+
+
+#  my_first_job:
+#    uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
+#    secrets:
+#      token: ${{ secrets.TOKEN }}          

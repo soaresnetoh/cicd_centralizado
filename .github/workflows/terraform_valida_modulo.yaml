@@ -3,8 +3,8 @@ name: "Novo teste"
 on:
   push
 jobs:
-  jobs_terraform:
-    name: Terraform workflow
+  jobs_teste:
+    name: workflow
     runs-on: ubuntu
 
     steps:

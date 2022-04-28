@@ -1,7 +1,7 @@
 name: "Novo teste"
 
-on:
-  push
+on: push
+
 jobs:
   jobs_teste:
     name: workflow

@@ -1,14 +1,24 @@
-name: "Novo teste"
-
+name: "Valida role ansibler"
+  
 on: push
-
 jobs:
-  jobs_teste:
-    name: workflow
-    runs-on: ubuntu
+  my_first_job:
     uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
     secrets:
-      token: ${{ secrets.TOKEN }}          
+      token: ${{ secrets.TOKEN }}
+
+
+#name: "Novo teste"
+
+#on: push
+
+#jobs:
+#  jobs_teste:
+#    name: workflow
+#    runs-on: ubuntu
+#    uses: rafaelm93/cicd_centralizado/.github/workflows/ansible_valida_role.yaml@teste
+#    secrets:
+#      token: ${{ secrets.TOKEN }}          
 
 #    steps:
 #      - name: Checkout
